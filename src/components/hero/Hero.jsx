@@ -46,17 +46,17 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative h-screen flex flex-col items-center justify-center bg-gray-100 z-[-1]">
+    <div className="relative sm:h-[69vh] h-[75vh] flex flex-col items-center justify-center bg-gray-100 z-[-1]">
       <img 
         src={HeroImage} 
         alt="Hero" 
-        className="object-cover h-full w-full object-[80%_100%] md:object-[70%_80%] z-0" 
+        className="object-cover h-full w-full object-[80%_100%] xs:object-[100%_40%] z-0" 
       />
       <img 
         ref={logoRef}
         src={HeroLogo} 
         alt="Hero Logo" 
-        className="absolute h-72 w-72" // Ensures the logo is on top of the hero image
+        className="absolute w-32 md:h-72 lg:w-72" // Ensures the logo is on top of the hero image
       />
     
     </div>

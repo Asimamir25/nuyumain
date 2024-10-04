@@ -12,6 +12,10 @@ export default {
         ITAICTEXT: "#C6B5A4",
         GRAY:"#808586"
       },
+      screens: {
+        'xs': '450px', // Custom breakpoint for 300px screen
+      },
+
       fontFamily: {
         openSans: ['Open Sans', 'sans-serif'], // Add Open Sans here
       },

@@ -13,6 +13,7 @@ import Footer from "./components/footer/Footer";
 
 // index.js or App.js
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Policy from "./components/footer/Policy";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
       <Gallery />
       <Contact />
       <Footer />
+      <Policy/>
     </div>
   );
 };
