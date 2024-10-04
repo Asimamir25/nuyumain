@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from "react";
 import Map from "../../assets/mappin.svg";
 import Phone from "../../assets/phone.svg";
@@ -40,15 +39,15 @@ const Infobar = () => {
   return (
     <div className="flex border flex-col lg:flex-row items-center justify-between px-6 md:px-[30px] py-[27px] bg-PRIMARY">
       {/* Location Section */}
-      <div className="flex items-center gap-[12px]  md:mb-0">
+      <div className="flex items-center justify-center gap-[12px]  md:mb-0">
         <img src={Map} alt="Map Icon" className="w-6 h-6" />
-        <p ref={addToRefs} className="text-[14px] font-normal text-black font-openSans ">
+        <p ref={addToRefs} className="text-[14px]   font-normal text-black font-openSans mb-2 sm:mb-0 ">
           Unit 1 Market Place, 68 Winchcombe Street, Cheltenham, GL52 6NZ
         </p>
       </div>
 
       {/* Contact Section */}
-      <div className="flex flex-col md:flex-row gap-[22px]  text-[14px]">
+      <div className="flex flex-col md:flex-row gap-2 sm:gap-[22px]  text-[14px]">
         {/* Phone Section */}
         <div className="flex items-center gap-1">
           <img src={Phone} alt="Phone Icon" className="w-6 h-6" />

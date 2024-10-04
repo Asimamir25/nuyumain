@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="flex flex-col md:flex-row p-3 h-auto  md:px-16 justify-between gap-3">
       {/* Image Section */}
-      <div className="w-full md:w-[42%] h-[400px] border border-red-700  md:h-auto border-0.8">
+      <div className="w-full md:w-[42%] max-h-[810px] border-0.8">
         <img
           src={ContactCard}
           alt="Contact Card"
@@ -15,7 +15,7 @@ const Contact = () => {
       </div>
 
       {/* Form Section */}
-      <div className="border-[0.85px] rounded-[5px] border-[#dac0a7] w-full md:w-[55%] h-auto px-[20px] md:px-[40px]  py-2 md:py-0 md:mb-0  md:pt-[20px]">
+      <div className="border-[0.85px] rounded-[5px] border-[#dac0a7] w-full md:w-[55%] h-[10%] px-[20px] md:px-[40px]  py-2 md:py-2 md:mb-0  md:pt-[10px]">
         <p className="text-[28px] md:text-[34px] font-openSans font-normal text-black mb-3">
           Get in Touch
         </p>
@@ -107,7 +107,7 @@ const Contact = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full h-[57px] rounded-[6px] bg-transparent font-openSans text-black font-bold hover:bg-[#9E7F61] hover:text-white transition-all border border-[#9E7F61]"
+            className="w-full h-[57px] rounded-[6px] bg-transparent font-openSans text-black font-bold hover:bg-[#9E7F61] hover:text-white transition-all border border-[#9E7F61] mb-2"
           >
             Submit Message
           </button>

@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Policy from "./Policy";
 
 // Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -58,7 +59,8 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="bg-[#9E7F61] ">
+    <>
+    <div className="bg-[#9E7F61] h-auto border border-red-500 ">
       <div className="flex flex-col lg:flex-row gap-3">
         <div className="w-full lg:w-[37%] h-auto pt-[40px] md:pt-[70px] pl-[20px] md:pl-4">
           <img
@@ -106,21 +108,10 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className="bg-[#DAC0A7] h-[150px] text-center px-3 py-[24px]">
-        <p ref={textRef} className="text-[14px] text-BLACK font-openSans">
-          © 2024 NuYu Dental. All rights reserved
-        </p>
-        <p  ref={textRef} className="text-[14px] text-BLACK font-openSans">
-          Privacy & Cookie Policy | Terms of Use | CQC | GDC | Complaints Policy
-        </p>
-        <p ref={textRef} className="text-[14px] text-BLACK font-openSans">
-          designed and maintained by smile marketing & consultancy
-        </p>
-        <p  ref={textRef} className="text-[14px] text-BLACK font-openSans">
-          website last updated on 29/09/2024
-        </p>
-      </div>
+      
     </div>
+  
+    </>
   );
 };
 
