@@ -18,18 +18,18 @@ import Policy from "./components/footer/Policy";
 const App = () => {
   return (
     <div>
-      {/* <Infobar />
+      <Infobar />
       <Navbar />
       <Hero />
       <PictureLayout />
       <WhyChoose />
       <DreamSmile />
       <ReviewSection />
-      <Finance /> */}
+      <Finance />
       <Gallery />
-      {/* <Contact />
+      <Contact />
       <Footer />
-      <Policy/> */}
+      <Policy/>
     </div>
   );
 };
