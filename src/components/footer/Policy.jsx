@@ -34,7 +34,7 @@ const Policy = () => {
 
   return (
     <div className="bg-[#DAC0A7] text-center px-3 py-[24px]">
-      <p ref={textRef} className="text-[14px] text-BLACK font-openSans">
+      <p  className="text-[14px] text-BLACK font-openSans">
         © 2024 NuYu Dental. All rights reserved
       </p>
       <p  className="text-[14px] text-BLACK font-openSans">
