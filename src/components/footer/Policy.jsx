@@ -37,7 +37,7 @@ const Policy = () => {
       <p ref={textRef} className="text-[14px] text-BLACK font-openSans">
         © 2024 NuYu Dental. All rights reserved
       </p>
-      <p ref={textRef} className="text-[14px] text-BLACK font-openSans">
+      <p  className="text-[14px] text-BLACK font-openSans">
         Privacy & Cookie Policy | Terms of Use | CQC | GDC | Complaints Policy
       </p>
       <p  className="text-[14px] text-BLACK font-openSans">
