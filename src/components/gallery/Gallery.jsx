@@ -64,10 +64,9 @@ function Gallery() {
           {[Pic1, Pic2, Pic3,Pic1, Pic2, Pic3,Pic1, Pic2, Pic3,Pic1, Pic2, Pic3,Pic1, Pic2, Pic3,Pic1, Pic2, Pic3,,Pic1, Pic2, Pic3,Pic1, Pic2, Pic3].map((pic, index) => (
             <img
               key={`image-${index}-1`} 
-             
               src={pic}
               alt={`pic ${index + 1}`}
-              className="w-[33.33%] object-cover max-h-[260px] flex-shrink-0" // Make images responsive
+              className="w-[100%] md:w-[33%] object-cover flex-shrink-0" 
               style={{ objectPosition: "20% 20%" }} // Center
             />
           ))}
@@ -91,7 +90,7 @@ function Gallery() {
               key={`image-${index}-2`}
                            src={pic}
               alt={`pic ${index + 4}`}
-              className="w-[33.33%] object-cover max-h-[260px] flex-shrink-0" 
+              className="w-[100%] md:w-[33%] object-cover max-h-[460px] flex-shrink-0" 
                             style={{ objectPosition: "20% 20%" }} // Center
             />
           ))}
