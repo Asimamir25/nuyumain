@@ -66,17 +66,17 @@ function Gallery() {
               key={`image-${index}-1`} 
               src={pic}
               alt={`pic ${index + 1}`}
-              className="w-[100%] md:w-[33%] object-cover flex-shrink-0" 
+              className="w-[100%] md:w-[33%] max-h-[400px] object-cover flex-shrink-0" 
               style={{ objectPosition: "20% 20%" }} // Center
             />
           ))}
         </div>
       </div>
 
-      <div className="col-span-1 sm:col-span-3 text-center my-4">
+      <div className="col-span-1 sm:col-span-3 text-center">
         <h2
           ref={subtitleRef}
-          className="text-[32px] sm:text-[40px] lg:text-[40px] my-4 font-sans text-center"
+          className="text-[32px] sm:text-[40px] lg:text-[40px] font-sans text-center"
         >
           NuSmiles delivered by NuYu Dental
         </h2>
