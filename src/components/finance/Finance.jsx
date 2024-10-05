@@ -21,7 +21,7 @@ function Finance() {
           scrollTrigger: {
             trigger: titleRef.current,
             start: "top 80%",
-            toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
           },
         }
       );
@@ -36,7 +36,7 @@ function Finance() {
           scrollTrigger: {
             trigger: subtitleRef.current,
             start: "top 80%",
-            toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
           },
         }
       );
@@ -51,7 +51,7 @@ function Finance() {
           scrollTrigger: {
             trigger: descriptionRef.current,
             start: "top 60%",
-            toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
           },
         }
       );
@@ -64,8 +64,8 @@ function Finance() {
       className="h-[600px] sm:h-[500px] md:h-[450px] lg:h-[550px] bg-cover bg-center font-sans mx-4 md:mx-[12.5%] bg-slate-300 flex justify-center lg:justify-end mt-5"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="bg-white w-[90%] sm:w-[70%] md:w-[60%] lg:w-[392px] p-5 lg:h-[450px] lg:mr-7 flex flex-col justify-center lg:justify-start">
-        <p  ref={descriptionRef} className=" font-openSans text-[24px] sm:text-[22px] md:text-[40px] lg:text-[36px] px-4 mb-3 lg:px-11">
+      <div className="bg-white w-[90%] sm:w-[70%] h-[330px] md:w-[60%] lg:w-[392px] p-2 lg:h-[320px] lg:mr-7 flex flex-col ">
+        <p  ref={descriptionRef} className=" font-openSans text-[24px] sm:text-[22px] md:text-[40px] lg:text-[36px] font-bold px-4 mb-3 lg:px-11">
           Making Dentistry Affordable
         </p>
         <div className="px-2 lg:px-5">
@@ -73,7 +73,7 @@ function Finance() {
             No one should have to compromise on the health or the look of their
             smile.
           </p>
-          <p   ref={titleRef} className="text-[14px] sm:text-[16px] md:text-[18px] font-openSans mt-4 font-normal">
+          <p   ref={titleRef} className="text-[14px] sm:text-[16px] md:text-[18px] font-openSans mt-2 font-normal">
             So we’ve worked with the country’s leading providers to bring you
             dental plans and finance offerings to make your dream smile a
             reality.

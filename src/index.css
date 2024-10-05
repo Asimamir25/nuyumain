@@ -2,9 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-    font-family: "AvenirBold";
-    src: local("AvenirBold"),
-      url(./assets/fonts/OpenSans-Regular.ttf) format("truetype");
+  font-family: "AvenirBold";
+  src: local("AvenirBold"),
+    url(./assets/fonts/OpenSans-Regular.ttf) format("truetype");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scroll {
+  0% {
+    transform: translate3d(0, 100vh, 0);
   }
-  
-  
+  100% {
+    transform: translate3d(0, -100vh, 0);
+  }
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translate3d(0, -100vh, 0);
+  }
+  100% {
+    transform: translate3d(0, 100vh, 0);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
+
+.animate-scroll-reverse {
+  animation: scroll-reverse 40s linear infinite;
+}
+
+/* 
+@keyframes scroll-left-to-right {
+  0% {
+    transform: translate3d(-100vw, 0, 0);
+  }
+  100% {
+    transform: translate3d(100vw, 0, 0);
+  }
+}
+
+@keyframes scroll-right-to-left {
+  0% {
+    transform: translate3d(100vw, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100vw, 0, 0);
+  }
+}
+
+.animate-scroll-left-to-right {
+  animation: scroll-left-to-right 40s linear infinite;
+}
+
+.animate-scroll-right-to-left {
+  animation: scroll-right-to-left 40s linear infinite;
+} */
+@keyframes scroll-left-to-right {
+  0% {
+    transform: translateX(-100vh); /* Use % instead of vw for more consistent behavior */
+  }
+  100% {
+    transform: translateX(100vh); /* Use % instead of vw for more consistent behavior */
+  }
+}
+
+@keyframes scroll-right-to-left {
+  0% {
+    transform: translateX(100vh); /* Use % instead of vw for more consistent behavior */
+  }
+  100% {
+    transform: translateX(-100vh); /* Use % instead of vw for more consistent behavior */
+  }
+}
+
+.animate-scroll-left-to-right {
+  animation: scroll-left-to-right 40s linear infinite; /* Adjust duration if necessary */
+}
+
+.animate-scroll-right-to-left {
+  animation: scroll-right-to-left 40s linear infinite; /* Adjust duration if necessary */
+}

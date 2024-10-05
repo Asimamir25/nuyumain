@@ -29,7 +29,7 @@ const Infobar = () => {
           scrollTrigger: {
             trigger: el,
             start: "top 50%", // Trigger when the top of the element hits 50% of the viewport
-            toggleActions: "play none none reverse", // Play on enter, none on leave
+            toggleActions: "play none none none", // Play on enter, none on leave
           },
         }
       );
@@ -37,11 +37,11 @@ const Infobar = () => {
   }, []);
 
   return (
-    <div className="flex border flex-col lg:flex-row items-center justify-between px-6 md:px-[30px] py-[27px] bg-PRIMARY">
+    <div className="flex border flex-col lg:flex-row items-center sticky z-10  top-0 left-0 right-0 justify-between px-6 md:px-[30px] py-[27px] bg-PRIMARY">
       {/* Location Section */}
       <div className="flex items-center justify-center gap-[12px]  md:mb-0">
         <img src={Map} alt="Map Icon" className="w-6 h-6" />
-        <p ref={addToRefs} className="text-[14px]   font-normal text-black font-openSans mb-2 sm:mb-0 ">
+        <p ref={addToRefs} className="text-[14px]   font-normal text-black font-openSans  sm:mb-0 ">
           Unit 1 Market Place, 68 Winchcombe Street, Cheltenham, GL52 6NZ
         </p>
       </div>
