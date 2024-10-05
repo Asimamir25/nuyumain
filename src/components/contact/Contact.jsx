@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="flex flex-col md:flex-row p-3 h-auto  md:px-16 justify-between gap-3">
       {/* Image Section */}
-      <div className="w-full md:w-[42%] max-h-[810px] border-0.8">
+      <div className="w-full md:w-[42%] max-h-[710px] border-0.8">
         <img
           src={ContactCard}
           alt="Contact Card"
@@ -91,7 +91,7 @@ const Contact = () => {
             </label>
             <textarea
               id="message"
-              className="w-full h-[170px] rounded-[6px] border border-[#9E7F61] px-4 py-2"
+              className="w-full max-h-[100px] rounded-[6px] border border-[#9E7F61] px-4 py-2"
               placeholder="Write your message here"
             ></textarea>
           </div>

@@ -70,7 +70,7 @@ function ReviewSection() {
       <div className="w-full lg:w-1/2 max-w-full lg:max-w-[50%] text-center lg:text-left">
         <h1
           ref={subtitleRef}
-          className="font-openSans text-[32px] md:text-[50px] lg:text-[56px] text-BLACK font-semibold mt-10"
+          className="font-openSans text-[32px] md:text-[50px] lg:text-[56px] text-BLACK mt-10"
         >
           What Our Patients Say About Us
         </h1>

@@ -1,0 +1,43 @@
+.parent {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* Prevent content from spilling outside */
+  }
+  
+  .child {
+    width: 50%;
+    position: relative;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between images */
+    position: absolute;
+    animation: scroll 70s linear infinite;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .left .image-container {
+    animation-direction: normal;
+  }
+  
+  .right .image-container {
+    animation-direction: reverse;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translate3d(0, 100vh, 0);
+    }
+    100% {
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+  
