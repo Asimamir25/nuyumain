@@ -140,18 +140,17 @@ const ImageScroll = () => {
           New Smile, NuYu
         </h4>
         <div className="flex items-center mt-[27px]">
-  <div className="flex px-6 py-3 rounded-md items-center gap-2 border border-[#9E7F61] group hover:bg-[#dac0a7] transition-colors ease-in">
-    <p className="text-black group-hover:text-white transition-all duration-200">
-      Meet the Team
-    </p>
-    <img
-      src={Arrow}
-      alt="arrow"
-      className="h-4 group-hover:filter group-hover:brightness-0 group-hover:contrast-100 transition-all duration-200 cursor-pointer"
-    />
-  </div>
-</div>
-
+          <div className="flex px-6 py-3 rounded-md items-center justify-center gap-2 border border-[#9E7F61] group hover:bg-[#dac0a7] transition-colors ease-in">
+            <button className="text-black  group transition-all duration-200">
+              <span className="group-hover:text-white font">Meet the Team</span>
+            </button>
+            <img
+    src={Arrow}
+    alt="arrow"
+    className="h-4 mt-1 transition-all duration-200 cursor-pointer group-hover:fill-current group-hover:hidden"
+  />
+          </div>
+        </div>
       </div>
 
       {/* Right Column (Images) */}

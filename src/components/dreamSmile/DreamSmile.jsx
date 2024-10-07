@@ -70,7 +70,7 @@ function DreamSmile() {
       {/* Responsive grid container for the cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Text Card */}
-        <div className="col-span-1 lg:col-span-1">
+        <div className="col-span-1 lg:col-span-1 ">
           <h1
             ref={titleRef}
             className="font-openSans text-[50px] md:text-[56px] text-BLACK font-semibold leading-snug"
@@ -108,9 +108,10 @@ function DreamSmile() {
           className="bg-cover bg-center relative h-[463px] group"
           style={{ backgroundImage: `url(${Pic2})` }}
         >
-          <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-BROWN pr-[50px] text-WHITE font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%]">
-            <p className="text-lg font-semibold font-openSans">
-              Dental Implants
+          <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
+            <p className="text-lg font-semibold font-openSans">Implants</p>
+            <p className="text-sm font-normal text-WHITE overflow-hidden h-0 group-hover:h-[3rem] transition-height duration-500 ease-in-out">
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, vero!
             </p>
           </div>
         </div>
@@ -118,9 +119,10 @@ function DreamSmile() {
           className="bg-cover bg-center relative h-[463px] group"
           style={{ backgroundImage: `url(${Pic3})` }}
         >
-          <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-BROWN pr-[50px] text-WHITE font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%]">
-            <p className="text-lg font-semibold font-openSans">
-              SmileFast Composite Bonding
+          <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
+            <p className="text-lg font-semibold font-openSans">SmileFast Composite Bonding</p>
+            <p className="text-sm font-normal text-WHITE overflow-hidden h-0 group-hover:h-[3rem] transition-height duration-500 ease-in-out">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, optio.
             </p>
           </div>
         </div>
@@ -128,9 +130,10 @@ function DreamSmile() {
           className="bg-cover bg-center relative h-[463px] group"
           style={{ backgroundImage: `url(${Pic4})` }}
         >
-          <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-BROWN pr-[50px] text-WHITE font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%]">
-            <p className="text-lg font-semibold font-openSans">
-              Teeth Whitening
+         <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
+            <p className="text-lg font-semibold font-openSans">Teeth Whitening</p>
+            <p className="text-sm font-normal text-WHITE overflow-hidden h-0 group-hover:h-[3rem] transition-height duration-500 ease-in-out">
+              Discreet teeth straightening with an Invisalign Diamond Provider
             </p>
           </div>
         </div>
@@ -138,9 +141,10 @@ function DreamSmile() {
           className="bg-cover bg-center relative h-[463px] group"
           style={{ backgroundImage: `url(${Pic5})` }}
         >
-          <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-BROWN pr-[50px] text-WHITE font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%]">
-            <p className="text-lg font-semibold font-openSans">
-              General dentistry
+          <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
+            <p className="text-lg font-semibold font-openSans">General dentistry</p>
+            <p className="text-sm font-normal text-WHITE overflow-hidden h-0 group-hover:h-[3rem] transition-height duration-500 ease-in-out">
+              Discreet teeth straightening with an Invisalign Diamond Provider
             </p>
           </div>
         </div>

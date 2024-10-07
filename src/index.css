@@ -3,11 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* src/styles.css or your main CSS file */
 @font-face {
-  font-family: "AvenirBold";
-  src: local("AvenirBold"),
-    url(./assets/fonts/OpenSans-Regular.ttf) format("truetype");
+  font-family: 'OpenSans';
+  src: url('./assets/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400; /* Change as needed */
+  font-style: normal; /* Change as needed */
 }
+
 
 @keyframes scroll {
   0% {

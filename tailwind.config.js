@@ -17,7 +17,7 @@ export default {
       },
 
       fontFamily: {
-        openSans: ['Open Sans', 'sans-serif'], // Add Open Sans here
+        openSans: ['OpenSans'], // Add Open Sans here
       },
     },
   },

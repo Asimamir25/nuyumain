@@ -89,13 +89,13 @@ const Navbar = () => {
       {/* Get In Touch Button - Desktop Only */}
       <div className="hidden lg:flex items-center">
   <button className="bg-[#9E7F61] flex items-center px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-4 rounded-md transition-all duration-200 text-white hover:bg-[#dac0a7] gap-2 group">
-    <span className="text-sm sm:text-base lg:text-lg font-openSans group-hover:text-black transition-all duration-200">
+    <span className="text-sm sm:text-base lg:text-lg font-openSans  transition-all duration-200">
       Get In Touch
     </span>
     <img
       src={Arrow}
       alt="arrow"
-      className="h-4 sm:h-5 lg:h-6 group-hover:filter group-hover:brightness-0 group-hover:contrast-100 transition-all duration-200"
+      className="h-4 sm:h-5 lg:h-6  transition-all duration-200"
     />
   </button>
 </div>
