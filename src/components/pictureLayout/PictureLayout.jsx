@@ -142,7 +142,7 @@ const ImageScroll = () => {
         <div className="flex items-center mt-[27px]">
           <div className="flex px-6 py-3 rounded-md items-center justify-center gap-2 border border-[#9E7F61] group hover:bg-[#dac0a7] transition-colors ease-in">
             <button className="text-black  group transition-all duration-200">
-              <span className="group-hover:text-white font">Meet the Team</span>
+              <span className="group-hover:text-white font-openSans">Meet the Team</span>
             </button>
             <img
     src={Arrow}

@@ -98,7 +98,7 @@ function DreamSmile() {
         >
           <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
             <p className="text-lg font-semibold font-openSans">Invisalign</p>
-            <p className="text-sm font-normal text-WHITE overflow-hidden h-0 group-hover:h-[3rem] transition-height duration-500 ease-in-out">
+            <p className="text-sm font-normal font-openSans text-WHITE overflow-hidden h-0 group-hover:h-[3rem] transition-height duration-500 ease-in-out">
               Discreet teeth straightening with an Invisalign Diamond Provider
             </p>
           </div>
@@ -110,7 +110,7 @@ function DreamSmile() {
         >
           <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
             <p className="text-lg font-semibold font-openSans">Implants</p>
-            <p className="text-sm font-normal text-WHITE overflow-hidden h-0 group-hover:h-[3rem] transition-height duration-500 ease-in-out">
+            <p className="text-sm font-normal font-openSans text-WHITE overflow-hidden h-0 group-hover:h-[3rem] transition-height duration-500 ease-in-out">
              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, vero!
             </p>
           </div>
@@ -121,7 +121,7 @@ function DreamSmile() {
         >
           <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
             <p className="text-lg font-semibold font-openSans">SmileFast Composite Bonding</p>
-            <p className="text-sm font-normal text-WHITE overflow-hidden h-0 group-hover:h-[3rem] transition-height duration-500 ease-in-out">
+            <p className="text-sm font-normal font-openSans text-WHITE overflow-hidden h-0 group-hover:h-[3rem] transition-height duration-500 ease-in-out">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, optio.
             </p>
           </div>
@@ -132,7 +132,7 @@ function DreamSmile() {
         >
          <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
             <p className="text-lg font-semibold font-openSans">Teeth Whitening</p>
-            <p className="text-sm font-normal text-WHITE overflow-hidden h-0 group-hover:h-[3rem] transition-height duration-500 ease-in-out">
+            <p className="text-sm font-normal font-openSans text-WHITE overflow-hidden h-0 group-hover:h-[3rem] transition-height duration-500 ease-in-out">
               Discreet teeth straightening with an Invisalign Diamond Provider
             </p>
           </div>
@@ -143,7 +143,7 @@ function DreamSmile() {
         >
           <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
             <p className="text-lg font-semibold font-openSans">General dentistry</p>
-            <p className="text-sm font-normal text-WHITE overflow-hidden h-0 group-hover:h-[3rem] transition-height duration-500 ease-in-out">
+            <p className="text-sm font-normal font-openSans text-WHITE overflow-hidden h-0 group-hover:h-[3rem] transition-height duration-500 ease-in-out">
               Discreet teeth straightening with an Invisalign Diamond Provider
             </p>
           </div>
