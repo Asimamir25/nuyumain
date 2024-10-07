@@ -80,3 +80,6 @@ a::after {
 a:hover::after {
   width: 40%; /* Full width on hover */
 }
+.transition-height {
+  transition-property: height;
+}

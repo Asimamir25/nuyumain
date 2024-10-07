@@ -81,32 +81,37 @@ function DreamSmile() {
             ref={subtitleRef}
             className="text-2xl font-openSans italic text-ITAICTEXT font-bold mb-2"
           >
-            A wide range of treatments to help Invisalign you achieve your dream smile
+            A wide range of treatments to help Invisalign you achieve your dream
+            smile
           </p>
           <p ref={descriptionRef} className="text-lg font-openSans">
-            Everyone’s smile is as unique as they are so our team works with each individual to understand the dream smile we can achieve for them.
+            Everyone’s smile is as unique as they are so our team works with
+            each individual to understand the dream smile we can achieve for
+            them.
           </p>
         </div>
 
         {/* Image Cards */}
-     <div
-  className="bg-cover bg-center relative h-[463px] group"
-  style={{ backgroundImage: `url(${Pic1})` }}
->
-  <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
-    <p className="text-lg font-semibold font-openSans">Invisalign</p>
-    <p className="text-sm font-normal text-WHITE hidden max-h-0 overflow-hidden group-hover:block group-hover:max-h-[200px] transition-all duration-[1500ms] ease-in-out">
-      Discreet teeth straightening with an Invisalign Diamond Provider
-    </p>
-  </div>
-</div>
+        <div
+          className="bg-cover bg-center relative h-[463px] group"
+          style={{ backgroundImage: `url(${Pic1})` }}
+        >
+          <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
+            <p className="text-lg font-semibold font-openSans">Invisalign</p>
+            <p className="text-sm font-normal text-WHITE overflow-hidden h-0 group-hover:h-[3rem] transition-height duration-500 ease-in-out">
+              Discreet teeth straightening with an Invisalign Diamond Provider
+            </p>
+          </div>
+        </div>
 
         <div
           className="bg-cover bg-center relative h-[463px] group"
           style={{ backgroundImage: `url(${Pic2})` }}
         >
           <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-BROWN pr-[50px] text-WHITE font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%]">
-            <p className="text-lg font-semibold font-openSans">Dental Implants</p>
+            <p className="text-lg font-semibold font-openSans">
+              Dental Implants
+            </p>
           </div>
         </div>
         <div
@@ -114,7 +119,9 @@ function DreamSmile() {
           style={{ backgroundImage: `url(${Pic3})` }}
         >
           <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-BROWN pr-[50px] text-WHITE font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%]">
-            <p className="text-lg font-semibold font-openSans">SmileFast Composite Bonding</p>
+            <p className="text-lg font-semibold font-openSans">
+              SmileFast Composite Bonding
+            </p>
           </div>
         </div>
         <div
@@ -122,7 +129,9 @@ function DreamSmile() {
           style={{ backgroundImage: `url(${Pic4})` }}
         >
           <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-BROWN pr-[50px] text-WHITE font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%]">
-            <p className="text-lg font-semibold font-openSans">Teeth Whitening</p>
+            <p className="text-lg font-semibold font-openSans">
+              Teeth Whitening
+            </p>
           </div>
         </div>
         <div
@@ -130,7 +139,9 @@ function DreamSmile() {
           style={{ backgroundImage: `url(${Pic5})` }}
         >
           <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-BROWN pr-[50px] text-WHITE font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%]">
-            <p className="text-lg font-semibold font-openSans">General dentistry</p>
+            <p className="text-lg font-semibold font-openSans">
+              General dentistry
+            </p>
           </div>
         </div>
       </div>
