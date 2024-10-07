@@ -89,17 +89,18 @@ function DreamSmile() {
         </div>
 
         {/* Image Cards */}
-        <div
-          className="bg-cover bg-center relative h-[463px] group"
-          style={{ backgroundImage: `url(${Pic1})` }}
-        >
-          <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
-            <p className="text-lg font-semibold font-openSans">Invisalign</p>
-            <p className="text-sm  font-normal text-WHITE  hidden  max-h-0 group-hover:block group-hover:max-h-20 transition-all duration-300 ease-in-out">
-              Discreet teeth straightening with an Invisalign Diamond Provider
-            </p>
-          </div>
-        </div>
+     <div
+  className="bg-cover bg-center relative h-[463px] group"
+  style={{ backgroundImage: `url(${Pic1})` }}
+>
+  <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
+    <p className="text-lg font-semibold font-openSans">Invisalign</p>
+    <p className="text-sm font-normal text-WHITE hidden max-h-0 overflow-hidden group-hover:block group-hover:max-h-[200px] transition-all duration-[1500ms] ease-in-out">
+      Discreet teeth straightening with an Invisalign Diamond Provider
+    </p>
+  </div>
+</div>
+
         <div
           className="bg-cover bg-center relative h-[463px] group"
           style={{ backgroundImage: `url(${Pic2})` }}

@@ -1,15 +1,13 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: "AvenirBold";
   src: local("AvenirBold"),
     url(./assets/fonts/OpenSans-Regular.ttf) format("truetype");
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @keyframes scroll {
   0% {
@@ -37,44 +35,18 @@
   animation: scroll-reverse 40s linear infinite;
 }
 
-/* 
-@keyframes scroll-left-to-right {
-  0% {
-    transform: translate3d(-100vw, 0, 0);
-  }
-  100% {
-    transform: translate3d(100vw, 0, 0);
-  }
-}
-
-@keyframes scroll-right-to-left {
-  0% {
-    transform: translate3d(100vw, 0, 0);
-  }
-  100% {
-    transform: translate3d(-100vw, 0, 0);
-  }
-}
-
-.animate-scroll-left-to-right {
-  animation: scroll-left-to-right 40s linear infinite;
-}
-
-.animate-scroll-right-to-left {
-  animation: scroll-right-to-left 40s linear infinite;
-} */
 @keyframes scroll-left-to-right {
   0% {
     transform: translateX(-100vh); /* Use % instead of vw for more consistent behavior */
   }
   100% {
-    transform: translateX(100vh); /* Use % instead of vw for more consistent behavior */
+    transform: translateX(0%); /* Use % instead of vw for more consistent behavior */
   }
 }
 
 @keyframes scroll-right-to-left {
   0% {
-    transform: translateX(100vh); /* Use % instead of vw for more consistent behavior */
+    transform: translateX(0vh); /* Use % instead of vw for more consistent behavior */
   }
   100% {
     transform: translateX(-100vh); /* Use % instead of vw for more consistent behavior */
@@ -82,9 +54,29 @@
 }
 
 .animate-scroll-left-to-right {
-  animation: scroll-left-to-right 40s linear infinite; /* Adjust duration if necessary */
+  animation: scroll-left-to-right 20s linear infinite; /* Adjust duration if necessary */
 }
 
 .animate-scroll-right-to-left {
-  animation: scroll-right-to-left 40s linear infinite; /* Adjust duration if necessary */
+  animation: scroll-right-to-left 20s linear infinite; /* Adjust duration if necessary */
+}
+a {
+  position: relative;
+}
+
+a::after {
+  content: '';
+  display: block;
+  height: 1px; /* Adjust the height as needed */
+  background: black; /* Change to desired color */
+  width: 0;
+  transition: width 0.3s ease-in; /* Animation speed */
+  position: absolute; 
+  left: 50%;
+  bottom: -1px; /* Adjust spacing from text */
+  transform: translateX(-50%);
+}
+
+a:hover::after {
+  width: 40%; /* Full width on hover */
 }

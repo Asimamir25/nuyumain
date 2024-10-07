@@ -12,8 +12,34 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const ImageScroll = () => {
-  const imagesLeftColumn = [Lady, Lady2, Lady3,Lady, Lady2, Lady3,Lady, Lady2, Lady3,Lady, Lady2, Lady3];
-  const imagesRightColumn = [Lady6, Lady5, Lady4,Lady6, Lady5, Lady4,Lady6, Lady5, Lady4,Lady6, Lady5, Lady4];
+  const imagesLeftColumn = [
+    Lady,
+    Lady2,
+    Lady3,
+    Lady,
+    Lady2,
+    Lady3,
+    Lady,
+    Lady2,
+    Lady3,
+    Lady,
+    Lady2,
+    Lady3,
+  ];
+  const imagesRightColumn = [
+    Lady6,
+    Lady5,
+    Lady4,
+    Lady6,
+    Lady5,
+    Lady4,
+    Lady6,
+    Lady5,
+    Lady4,
+    Lady6,
+    Lady5,
+    Lady4,
+  ];
 
   const titleRefs = useRef([]);
   const paragraphRefs = useRef([]);
@@ -77,10 +103,16 @@ const ImageScroll = () => {
       {/* Center Content (Text) */}
       <div className="w-full flex flex-col text-center items-center   mb-4 md:mb-0">
         <div className="mt-3">
-          <h2 ref={(el) => (titleRefs.current[0] = el)} className="text-[32px] md:text-[56px] font-bold font-openSans">
+          <h2
+            ref={(el) => (titleRefs.current[0] = el)}
+            className="text-[32px] md:text-[56px] font-bold font-openSans"
+          >
             Your smile,
           </h2>
-          <h2 ref={(el) => (titleRefs.current[1] = el)} className="text-[32px] md:text-[56px] font-bold font-openSans">
+          <h2
+            ref={(el) => (titleRefs.current[1] = el)}
+            className="text-[32px] md:text-[56px] font-bold font-openSans"
+          >
             Our passion
           </h2>
         </div>
@@ -108,11 +140,18 @@ const ImageScroll = () => {
           New Smile, NuYu
         </h4>
         <div className="flex items-center mt-[27px]">
-          <div className="flex px-[24px] sm:px-[30px] md:px-[40px] py-[12px] sm:py-[18px] md:py-[23px] rounded-[5px] items-center gap-2 border border-[#9E7F61] font-openSans">
-            <p className="text-black font-openSans">Meet the Team</p>
-            <img src={Arrow} alt="arrow" className="h-4 sm:h-5 md:h-6" />
-          </div>
-        </div>
+  <div className="flex px-6 py-3 rounded-md items-center gap-2 border border-[#9E7F61] group hover:bg-[#dac0a7] transition-colors ease-in">
+    <p className="text-black group-hover:text-white transition-all duration-200">
+      Meet the Team
+    </p>
+    <img
+      src={Arrow}
+      alt="arrow"
+      className="h-4 group-hover:filter group-hover:brightness-0 group-hover:contrast-100 transition-all duration-200 cursor-pointer"
+    />
+  </div>
+</div>
+
       </div>
 
       {/* Right Column (Images) */}

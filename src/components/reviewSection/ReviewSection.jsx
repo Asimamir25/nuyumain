@@ -22,7 +22,7 @@ function ReviewSection() {
           duration: 1,
           scrollTrigger: {
             trigger: titleRef.current,
-            start: "top 80%",
+            start: "top 90%",
             toggleActions: "play none none reverse",
           },
         }

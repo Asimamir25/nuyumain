@@ -57,11 +57,11 @@ function Gallery() {
   }, []);
 
   return (
-    <div className="h-screen px-4 mt-2 flex flex-col justify-evenly lg:justify-center overflow-hidden">
+    <div className="h-screen px-4 mt-4 w-full relative flex flex-col justify-evenly lg:justify-center overflow-hidden">
       {/* First Row of Images */}
       <div className="relative w-full overflow-hidden">
         <div className="flex flex-row gap-3 animate-scroll-right-to-left">
-          {[Pic1, Pic2, Pic3,Pic1, Pic2, Pic3,Pic1, Pic2, Pic3,Pic1, Pic2, Pic3,Pic1, Pic2, Pic3,Pic1, Pic2, Pic3,,Pic1, Pic2, Pic3,Pic1, Pic2, Pic3].map((pic, index) => (
+          {[Pic1, Pic2, Pic3,Pic1, Pic2, Pic3,Pic1, Pic2, Pic3,].map((pic, index) => (
             <img
               key={`image-${index}-1`} 
               src={pic}
@@ -76,7 +76,7 @@ function Gallery() {
       <div className="col-span-1 sm:col-span-3 text-center">
         <h2
           ref={subtitleRef}
-          className="text-[32px] sm:text-[40px] lg:text-[40px] font-sans text-center"
+          className="text-[32px] sm:text-[40px] my-3 lg:text-[40px] font-sans text-center"
         >
           NuSmiles delivered by NuYu Dental
         </h2>
@@ -85,7 +85,7 @@ function Gallery() {
       {/* Second Row of Images */}
       <div className="relative w-full overflow-hidden ">
         <div className="flex flex-row gap-3 animate-scroll-left-to-right">
-          {[Pic4, Pic5, Pic6,Pic4, Pic5, Pic6,Pic4, Pic5, Pic6,Pic4, Pic5, Pic6,Pic4, Pic5, Pic6,Pic4, Pic5, Pic6,].map((pic, index) => (
+          {[Pic4, Pic5, Pic6,Pic4, Pic5, Pic6,].map((pic, index) => (
             <img
               key={`image-${index}-2`}
                            src={pic}

@@ -1,12 +1,11 @@
-
 import React from "react";
 import ContactCard from "../../assets/contactcard.png";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col md:flex-row p-3 h-auto  md:px-16 justify-between gap-3">
+    <div className="flex flex-col md:flex-row p-3 h-auto md:px-16 justify-between gap-3">
       {/* Image Section */}
-      <div className="w-full md:w-[42%] max-h-[710px] border-0.8">
+      <div className="w-full md:w-[42%] max-h-[630px] border-0.8">
         <img
           src={ContactCard}
           alt="Contact Card"
@@ -15,41 +14,42 @@ const Contact = () => {
       </div>
 
       {/* Form Section */}
-      <div className="border-[0.85px] rounded-[5px] border-[#dac0a7] w-full md:w-[55%] h-[10%] px-[20px] md:px-[40px]  py-2 md:py-2 md:mb-0  md:pt-[10px]">
+      <div className="border-[0.85px] rounded-[5px] border-[#dac0a7] w-full md:w-[55%] h-auto px-[20px] md:px-[40px] py-2 md:py-2 md:mb-0 md:pt-[10px]">
         <p className="text-[28px] md:text-[34px] font-openSans font-normal text-black mb-3">
           Get in Touch
         </p>
 
         {/* Form Fields */}
         <form>
-          <div className="mb-3">
-            <label
-              className="block text-sm  font-openSans font-medium text-black mb-2"
-              htmlFor="name"
-            >
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              className="w-full rounded-[6px] h-[57px] border border-[#9E7F61] px-4"
-              placeholder="Enter your name"
-            />
-          </div>
-
-          <div className="mb-3">
-            <label
-              className="block text-sm  font-openSans font-medium text-black mb-2"
-              htmlFor="phone"
-            >
-              Phone
-            </label>
-            <input
-              type="text"
-              id="phone"
-              className="w-full rounded-[6px] h-[57px] border border-[#9E7F61] px-4"
-              placeholder="Enter your phone number"
-            />
+          <div className="flex flex-col md:flex-row mb-3 gap-3">
+            <div className="w-full md:w-1/2">
+              <label
+                className="block text-sm font-openSans font-medium text-black mb-2"
+                htmlFor="name"
+              >
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                className="w-full rounded-[6px] h-[57px] border border-[#9E7F61] px-4"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div className="w-full md:w-1/2">
+              <label
+                className="block text-sm font-openSans font-medium text-black mb-2"
+                htmlFor="phone"
+              >
+                Phone
+              </label>
+              <input
+                type="text"
+                id="phone"
+                className="w-full rounded-[6px] h-[57px] border border-[#9E7F61] px-4"
+                placeholder="Enter your phone number"
+              />
+            </div>
           </div>
 
           <div className="mb-3">
@@ -99,7 +99,10 @@ const Contact = () => {
           {/* Privacy Checkbox */}
           <div className="flex items-center mb-3">
             <input type="checkbox" id="privacy" className="mr-2" />
-            <label htmlFor="privacy" className="text-sm font-openSans text-black">
+            <label
+              htmlFor="privacy"
+              className="text-sm font-openSans text-black"
+            >
               I agree to the privacy policy.
             </label>
           </div>
@@ -107,9 +110,12 @@ const Contact = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full h-[57px] rounded-[6px] bg-transparent font-openSans text-black font-bold hover:bg-[#9E7F61] hover:text-white transition-all border border-[#9E7F61] mb-2"
+            className="w-full h-[57px] mt-3 rounded-[6px] font-openSans text-black  border border-[#9E7F61] mb-2  transition-all duration-200  hover:bg-[#dac0a7] group"
           >
+            <span className=" group-hover:text-white transition-all duration-200">
             Submit Message
+
+            </span>
           </button>
         </form>
       </div>

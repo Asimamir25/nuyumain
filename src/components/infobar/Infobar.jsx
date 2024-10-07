@@ -41,7 +41,7 @@ const Infobar = () => {
       {/* Location Section */}
       <div className="flex items-center justify-center gap-[12px]  md:mb-0">
         <img src={Map} alt="Map Icon" className="w-6 h-6" />
-        <p ref={addToRefs} className="text-[14px]   font-normal text-black font-openSans  sm:mb-0 ">
+        <p ref={addToRefs} className="text-[14px]   font-normal text-black font-openSans  sm:mb-0  cursor-pointer">
           Unit 1 Market Place, 68 Winchcombe Street, Cheltenham, GL52 6NZ
         </p>
       </div>
@@ -51,7 +51,7 @@ const Infobar = () => {
         {/* Phone Section */}
         <div className="flex items-center gap-1">
           <img src={Phone} alt="Phone Icon" className="w-6 h-6" />
-          <p ref={addToRefs} className="font-normal font-openSans">+62 864 6444 2222</p>
+          <p ref={addToRefs} className="font-normal font-openSans cursor-pointer">+62 864 6444 2222</p>
         </div>
 
         {/* Divider */}
@@ -60,7 +60,7 @@ const Infobar = () => {
         {/* Email Section */}
         <div className="flex items-center gap-1">
           <img src={Mail} alt="Mail Icon" className="w-6 h-6" />
-          <p ref={addToRefs} className="font-normal text-[14px] font-openSans">info@nuyu-dental.co.uk</p>
+          <p ref={addToRefs} className="font-normal text-[14px] font-openSans cursor-pointer">info@nuyu-dental.co.uk</p>
         </div>
       </div>
     </div>
