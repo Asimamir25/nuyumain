@@ -20,7 +20,7 @@ const App = () => {
     <div>
       <Infobar />
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
       <PictureLayout />
       <WhyChoose />
       <DreamSmile />
