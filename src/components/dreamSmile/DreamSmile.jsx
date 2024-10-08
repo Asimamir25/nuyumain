@@ -55,7 +55,7 @@ function DreamSmile() {
           duration: 1,
           scrollTrigger: {
             trigger: descriptionRef.current,
-            start: "top 80%",
+            start: "top 100%",
             toggleActions: "play none none reverse",
           },
         }
@@ -79,12 +79,12 @@ function DreamSmile() {
           </h1>
           <p
             ref={subtitleRef}
-            className="text-2xl font-openSans italic text-ITAICTEXT font-bold mb-2"
+            className="text-2xl font-openSans italic text-ITAICTEXT leading-10 font-bold mb-2"
           >
             A wide range of treatments to help Invisalign you achieve your dream
             smile
           </p>
-          <p ref={descriptionRef} className="text-lg font-openSans">
+          <p ref={descriptionRef} className="text-[26px] leading-9 font-openSans">
             Everyone’s smile is as unique as they are so our team works with
             each individual to understand the dream smile we can achieve for
             them.

@@ -38,7 +38,10 @@ const Navbar = () => {
     >
       {/* Left Section: Logo */}
       <div className="flex items-center">
-        <img src={Logo} alt="logo" className="h-8 sm:h-10 lg:h-14" />
+        <img src={Logo} alt="logo" className="h-8 sm:h-10 lg:h-14" style={{
+    imageRendering: "auto", 
+        filter: "contrast(130%)", // Slightly increase contrast for sharper appearance
+  }} />
       </div>
 
       {/* Hamburger Menu for Small Screens */}
@@ -54,17 +57,17 @@ const Navbar = () => {
 
       {/* Desktop Links */}
       <div className="hidden lg:flex items-center">
-        <a className="text-sm xl:text-base font-normal text-black px-4 py-2 lg:px-6 font-openSans cursor-pointer">
+        <a className="text-sm xl:text-base font-normal text-black px-4 py-2  lg:px-6 font-openSans cursor-pointer hover:-translate-y-1 transition-all ease-in">
           Home
         </a>
-        <a className="text-sm xl:text-base font-normal text-black px-4 py-2 lg:px-6 font-openSans cursor-pointer">
+        <a className="text-sm xl:text-base font-normal text-black px-4 py-2 duration-300 lg:px-6 font-openSans cursor-pointer  hover:-translate-y-1">
           About Us
         </a>
         <a
           href=""
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm xl:text-base font-normal text-black px-4 py-2 lg:px-6 transition duration-300 font-openSans"
+          className="text-sm xl:text-base font-normal text-black px-4 py-2 lg:px-6 transition duration-300 font-openSans  hover:-translate-y-1"
         >
           Treatments
         </a>
@@ -72,7 +75,7 @@ const Navbar = () => {
           href=""
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm xl:text-base font-normal text-black px-4 py-2 lg:px-6 transition duration-300 font-openSans"
+          className="text-sm xl:text-base font-normal text-black px-4 py-2 lg:px-6 transition duration-300 font-openSans  hover:-translate-y-1"
         >
           Smile Gallery
         </a>
@@ -80,7 +83,7 @@ const Navbar = () => {
           href=""
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm xl:text-base font-normal text-black px-4 py-2 hover:text-white lg:px-6 transition duration-300 font-openSans"
+          className="text-sm xl:text-base font-normal text-black px-4 py-2  lg:px-6 transition   font-openSans  hover:-translate-y-1 duration-300"
         >
           Fees
         </a>

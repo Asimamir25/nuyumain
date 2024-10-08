@@ -22,8 +22,8 @@ function ReviewSection() {
           duration: 1,
           scrollTrigger: {
             trigger: titleRef.current,
-            start: "top 90%",
-            toggleActions: "play none none reverse",
+            start: "top 115%",
+            toggleActions: "play none none none",
           },
         }
       );
@@ -37,7 +37,7 @@ function ReviewSection() {
           duration: 1,
           scrollTrigger: {
             trigger: subtitleRef.current,
-            start: "top 80%",
+            start: "top 100%",
             toggleActions: "play none none reverse",
           },
         }
@@ -70,7 +70,7 @@ function ReviewSection() {
       <div className="w-full lg:w-1/2 max-w-full lg:max-w-[50%] text-center lg:text-left">
         <h1
           ref={subtitleRef}
-          className="font-openSans text-[32px] md:text-[50px] lg:text-[56px] text-BLACK mt-10"
+          className="font-openSans text-[32px] md:text-[50px] lg:text-[56px] text-BLACK mt-6"
         >
           What Our Patients Say About Us
         </h1>

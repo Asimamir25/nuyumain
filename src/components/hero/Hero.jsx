@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import HeroImage from "../../assets/heroimage.png";
-import HeroLogo from "../../assets/herologo.svg";
+import HeroLogo from "../../assets/nuyu.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -52,11 +52,12 @@ const Hero = () => {
         alt="Hero" 
         className="object-cover h-full w-full object-[80%_100%] xs:object-[100%_40%] z-0" 
       />
+       <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
       <img 
         ref={logoRef}
         src={HeroLogo} 
         alt="Hero Logo" 
-        className="absolute w-32 md:h-72 lg:w-72" // Ensures the logo is on top of the hero image
+        className="absolute w-96 z-30  " // Ensures the logo is on top of the hero image
       />
     
     </div>

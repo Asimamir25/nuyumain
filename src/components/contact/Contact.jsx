@@ -74,12 +74,17 @@ const Contact = () => {
             >
               Treatment
             </label>
-            <input
-              type="text"
+            <select
               id="treatment"
-              className="w-full rounded-[6px] h-[57px] border border-[#9E7F61] px-4"
-              placeholder="Enter the treatment you are seeking"
-            />
+              className="w-full rounded-[6px] h-[57px] border outline-none border-[#9E7F61] px-4"
+            >
+              <option value="" disabled selected>
+                Select the treatment you are seeking
+              </option>
+              <option value="treatment1">Invisalign</option>
+              <option value="treatment2">Implants</option>
+              <option value="treatment3">TeethWhitening</option>
+            </select>
           </div>
 
           <div className="mb-3">
@@ -113,8 +118,7 @@ const Contact = () => {
             className="w-full h-[57px] mt-3 rounded-[6px] font-openSans text-black  border border-[#9E7F61] mb-2  transition-all duration-200  hover:bg-[#dac0a7] group"
           >
             <span className=" group-hover:text-white transition-all duration-200">
-            Submit Message
-
+              Submit Message
             </span>
           </button>
         </form>

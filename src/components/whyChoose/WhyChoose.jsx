@@ -47,12 +47,12 @@ function WhyChoose() {
 
   return (
     <div
-      className="w-full lg:h-full bg-cover bg-center py-4 font-sans"
+      className="w-full lg:h-full bg-cover bg-center  font-sans"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <h1
       
-        className="font-semibold text-3xl md:text-4xl lg:text-[56px] text-center pt-6 mb-5 font-openSans"
+        className="font-semibold text-3xl md:text-4xl lg:text-[56px] text-center pt-6 mb-2 font-openSans"
       >
         Why choose Nuyu?
       </h1>
@@ -60,8 +60,8 @@ function WhyChoose() {
         {/* First Row */}
         <div className="flex flex-wrap justify-center w-full">
           {/* Card 1 */}
-          <div className="p-4 w-full sm:w-1/2 lg:w-1/3">
-            <div className="px-4 py-6">
+          <div className="p-2 w-full sm:w-1/2 lg:w-1/3">
+            <div className="px-4 py-2">
               <div className="flex justify-center">
                 <img
                   src={Location}
@@ -78,8 +78,8 @@ function WhyChoose() {
             </div>
           </div>
           {/* Card 2 */}
-          <div className="p-4 w-full sm:w-1/2 lg:w-1/3">
-            <div className="px-4 py-6">
+          <div className="p-2 w-full sm:w-1/2 lg:w-1/3">
+            <div className="px-4 py-2">
               <div className="flex justify-center">
                 <img
                   src={Batch}
@@ -100,8 +100,8 @@ function WhyChoose() {
         {/* Second Row */}
         <div className="flex flex-wrap justify-center w-full">
           {/* Card 3 */}
-          <div className="p-4 w-full sm:w-1/2 lg:w-1/3">
-            <div className="px-4 py-6">
+          <div className="p-2 w-full sm:w-1/2 lg:w-1/3">
+            <div className="px-4 py-2">
               <div className="flex justify-center">
                 <img
                   src={Calendar}
@@ -118,8 +118,8 @@ function WhyChoose() {
             </div>
           </div>
           {/* Card 4 */}
-          <div className="p-4 w-full sm:w-1/2 lg:w-1/3">
-            <div className="px-4 py-6">
+          <div className="p-2 w-full sm:w-1/2 lg:w-1/3">
+            <div className="px-4 py-2">
               <div className="flex justify-center">
                 <img
                   src={Doctor}
@@ -136,8 +136,8 @@ function WhyChoose() {
             </div>
           </div>
           {/* Card 5 */}
-          <div className="p-4 w-full sm:w-1/2 lg:w-1/3">
-            <div className="px-4 py-6">
+          <div className="p-2 w-full sm:w-1/2 lg:w-1/3">
+            <div className="px-4 py-2">
               <div className="flex justify-center">
                 <img
                   src={Finance}

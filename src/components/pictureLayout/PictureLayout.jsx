@@ -118,7 +118,7 @@ const ImageScroll = () => {
         </div>
         <p
           ref={(el) => (paragraphRefs.current[0] = el)}
-          className="mt-2 text-[24px] text-[#9E7F618A] font-bold italic font-openSans"
+          className="mt-2 text-[24px] text-[#9E7F618A] px-[14px] font-bold italic font-openSans"
         >
           Quality dental care in the heart of Cheltenham
         </p>

@@ -66,7 +66,7 @@ function Gallery() {
               key={`image-${index}-1`} 
               src={pic}
               alt={`pic ${index + 1}`}
-              className="w-[100%] md:w-[33%] max-h-[460px] object-cover flex-shrink-0" 
+              className="w-[100%] md:w-[33%] max-h-[400px] object-cover flex-shrink-0" 
               style={{ objectPosition: "20% 20%" }} // Center
             />
           ))}
@@ -90,7 +90,7 @@ function Gallery() {
               key={`image-${index}-2`}
                            src={pic}
               alt={`pic ${index + 4}`}
-              className="w-[100%] md:w-[33%] object-cover max-h-[460px] flex-shrink-0" 
+              className="w-[100%] md:w-[33%] object-cover max-h-[400px] flex-shrink-0" 
                             style={{ objectPosition: "20% 20%" }} // Center
             />
           ))}
