@@ -105,13 +105,13 @@ const PictureLayout = () => {
         <div className="mt-3">
           <h2
             ref={(el) => (titleRefs.current[0] = el)}
-            className="text-32 md:text-56 font-bold font-openSans"
+            className=" text-3xl sm:text-4xl lg:text-[50px] xl:text-6xl font-bold font-openSans"
           >
             Your smile,
           </h2>
           <h2
             ref={(el) => (titleRefs.current[1] = el)}
-            className="text-32 md:text-56 font-bold font-openSans"
+            className="text-3xl sm:text-4xl lg:text-[50px] xl:text-6xl font-bold font-openSans"
           >
             Our passion
           </h2>
