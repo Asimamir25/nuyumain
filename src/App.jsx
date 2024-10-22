@@ -1,38 +1,24 @@
 import React, { Suspense, lazy } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Animation from "./components/animation/Animation"; // Import your loading component
 
-// Lazy load your components
-const Infobar = lazy(() => import("./components/infobar/Infobar"));
-const Hero = lazy(() => import("./components/hero/Hero"));
-const Navbar = lazy(() => import("./components/navbar/Navbar"));
-const WhyChoose = lazy(() => import("./components/whyChoose/WhyChoose"));
-const DreamSmile = lazy(() => import("./components/dreamSmile/DreamSmile"));
-const ReviewSection = lazy(() => import("./components/reviewSection/ReviewSection"));
-const Finance = lazy(() => import("./components/finance/Finance"));
-const Gallery = lazy(() => import("./components/gallery/Gallery"));
-const PictureLayout = lazy(() => import("./components/pictureLayout/PictureLayout"));
-const Contact = lazy(() => import("./components/contact/Contact"));
-const Footer = lazy(() => import("./components/footer/Footer"));
-const Policy = lazy(() => import("./components/footer/Policy"));
+// Lazy load the Main and Home components
+const Main = lazy(() => import("./pages/main/Main"));
+const Home = lazy(() => import("./pages/home/Home"));
 
 const App = () => {
   return (
-    <div>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Infobar />
-        <Navbar />
-        <Hero />
-        <PictureLayout />
-        <WhyChoose />
-        <DreamSmile />
-        <ReviewSection />
-        <Finance />
-        <Gallery />
-        <Contact />
-        <Footer />
-        <Policy />
+    <Router>
+      <Suspense fallback={<Animation />}>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/home" element={<Home />} />
+
+          {/* Add other routes here as needed */}
+        </Routes>
       </Suspense>
-    </div>
+    </Router>
   );
 };
 
