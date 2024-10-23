@@ -31,7 +31,7 @@ function WhyChoose() {
     // Animate each card heading when it enters the viewport
     cardHeadingRefs.current.forEach((heading, index) => {
       gsap.from(heading, {
-        duration:1,
+        duration: 1,
         y: 30,
         opacity: 0,
         ease: "power2.out",
@@ -47,13 +47,10 @@ function WhyChoose() {
 
   return (
     <div
-      className="w-full h-screen bg-cover bg-center  flex flex-col justify-center items-center pt-[10px] pb-[10px]  font-openSans"
+      className="w-full h-full bg-cover bg-center  flex flex-col justify-center items-center pt-[10px] pb-[10px]  font-openSans"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <h1
-      
-        className=" text-3xl md:text-4xl lg:text-[46px] text-center pt-6 mb-2 font-openSans"
-      >
+      <h1 className=" text-3xl md:text-4xl lg:text-[46px] text-center pt-6 mb-2 font-openSans">
         Why choose Nuyu?
       </h1>
       <div className="flex flex-wrap justify-center lg:mt-4">
@@ -69,10 +66,7 @@ function WhyChoose() {
                   alt="Location"
                 />
               </div>
-              <h2
-              
-                className="title-font  text-lg sm:text-xl lg:text-2xl text-gray-900 text-center max-w-[300px] mx-auto font-openSans"
-              >
+              <h2 className="title-font  text-lg sm:text-xl lg:text-2xl text-gray-900 text-center max-w-[300px] mx-auto font-openSans">
                 Luxury dental practice in an excellent location
               </h2>
             </div>
@@ -87,10 +81,7 @@ function WhyChoose() {
                   alt="Batch"
                 />
               </div>
-              <h2
-             
-                className="title-font  text-lg sm:text-xl lg:text-2xl text-gray-900 text-center max-w-[350px] mx-auto font-openSans"
-              >
+              <h2 className="title-font  text-lg sm:text-xl lg:text-2xl text-gray-900 text-center max-w-[350px] mx-auto font-openSans">
                 Highly trained in easing dental phobia
               </h2>
             </div>
@@ -109,10 +100,7 @@ function WhyChoose() {
                   alt="Calendar"
                 />
               </div>
-              <h2
-             
-                className="title-font  text-lg  font-openSans sm:text-xl lg:text-2xl text-gray-900 text-center max-w-[350px] mx-auto"
-              >
+              <h2 className="title-font  text-lg  font-openSans sm:text-xl lg:text-2xl text-gray-900 text-center max-w-[350px] mx-auto">
                 Evening & weekend Appointments
               </h2>
             </div>
@@ -127,10 +115,7 @@ function WhyChoose() {
                   alt="Doctor"
                 />
               </div>
-              <h2
-              
-                className="title-font  text-lg sm:text-xl lg:text-2xl text-gray-900 text-center max-w-[350px] font-openSans mx-auto"
-              >
+              <h2 className="title-font  text-lg sm:text-xl lg:text-2xl text-gray-900 text-center max-w-[350px] font-openSans mx-auto">
                 Advanced dental techniques & Technology
               </h2>
             </div>
@@ -145,10 +130,7 @@ function WhyChoose() {
                   alt="Finance"
                 />
               </div>
-              <h2
-               
-                className="title-font font-openSans text-lg sm:text-xl lg:text-2xl text-gray-900 text-center max-w-[350px] mx-auto"
-              >
+              <h2 className="title-font font-openSans text-lg sm:text-xl lg:text-2xl text-gray-900 text-center max-w-[350px] mx-auto">
                 Finance options & membership plans
               </h2>
             </div>

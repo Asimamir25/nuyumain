@@ -84,7 +84,7 @@ function DreamSmile() {
             A wide range of treatments to help Invisalign you achieve your dream
             smile
           </p>
-          <p ref={descriptionRef} className="text-[20px] leading-7  font-openSans">
+          <p ref={descriptionRef} className="text-[20px] xl:text-[23px] 2xl:text-[27px] leading-2 xl:leading-[27px]  font-openSans">
             Everyone’s smile is as unique as they are so our team works with
             each individual to understand the dream smile we can achieve for
             them.

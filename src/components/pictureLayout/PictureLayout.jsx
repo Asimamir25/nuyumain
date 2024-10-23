@@ -107,13 +107,13 @@ const PictureLayout = () => {
        
             className="text-3xl sm:text-2xl lg:text-[50px] xl:text-6xl font-bold font-openSans"
           >
-            Your smile,
+            Your Smile,
           </h2>
           <h2
             // ref={(el) => (titleRefs.current[1] = el)}
             className="text-3xl sm:text-2xl lg:text-[50px] xl:text-6xl font-bold font-openSans"
           >
-            Our passion
+            Our Passion
           </h2>
         </div>
         <p
@@ -135,7 +135,7 @@ const PictureLayout = () => {
         </p>
         <h4
           ref={(el) => (titleRefs.current[2] = el)}
-          className="text-34 font-normal mt-8 font-openSans"
+          className="font-bold text-4xl mt-8 font-openSans"
         >
           New Smile, NuYu
         </h4>
