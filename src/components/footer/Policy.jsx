@@ -33,17 +33,17 @@ const Policy = () => {
 
 
   return (
-    <div className="bg-[#DAC0A7] text-center px-3 py-[24px]">
-      <p  className="text-[14px] text-BLACK font-openSans">
+    <div className="bg-[#DAC0A7] text-center  py-[10px]">
+      <p  className="text-[12px] text-BLACK font-openSans">
         © 2024 NuYu Dental. All rights reserved
       </p>
-      <p  className="text-[14px] text-BLACK font-openSans">
+      <p  className="text-[12px] text-BLACK font-openSans">
         Privacy & Cookie Policy | Terms of Use | CQC | GDC | Complaints Policy
       </p>
-      <p  className="text-[14px] text-BLACK font-openSans">
+      <p  className="text-[12px] text-BLACK font-openSans">
         designed and maintained by smile marketing & consultancy
       </p>
-      <p className="text-[14px] text-BLACK font-openSans">
+      <p className="text-[12px] text-BLACK font-openSans">
         website last updated on 29/09/2024
       </p>
     </div>

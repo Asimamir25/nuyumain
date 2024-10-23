@@ -62,23 +62,23 @@ const Footer = () => {
     <>
     <div className="bg-[#9E7F61] h-auto border border-red-500 ">
       <div className="flex flex-col lg:flex-row gap-3">
-        <div className="w-full lg:w-[37%] h-auto pt-[40px] md:pt-[70px] pl-[20px] md:pl-4">
+        <div className="w-full lg:w-[37%] h-auto pt-[40px] flex justify-center flex-col  md:pt-[30px] pl-[20px] md:pl-4">
           <img
             ref={logoRef}
             src={Logo}
-            className="w-full max-w-[120px] md:max-w-[340px]"
+            className="w-full max-w-[200px] md:max-w-[340px]"
             alt="Logo"
           />
           <p
             ref={textRef}
-            className="mt-[28px] text-[14px] md:text-[16px] font-normal font-openSans text-[#CDD8D9]"
+            className="mt-[10px] text-[14px] md:text-[16px] font-normal font-openSans text-[#CDD8D9]"
           >
             Amet quis rhoncus turpis phasellus ut dui. Volutpat turpis tortor
             blandit eget nibh ac lacus vitae purus. Sagittis tortor fermentum.
           </p>
 
           {/* Social media icons */}
-          <div className="flex mt-[20px] space-x-4">
+          <div className="flex mt-[17px] space-x-4">
             <div className="bg-[#DAC0A7] p-2">
               <FontAwesomeIcon
                 icon={faTwitter}

@@ -47,12 +47,12 @@ function WhyChoose() {
 
   return (
     <div
-      className="w-full lg:h-full bg-cover bg-center  font-sans"
+      className="w-full h-full lg:h-screen bg-cover bg-center pt-[20px] pb-[20px]  font-sans"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <h1
       
-        className="font-semibold text-3xl md:text-4xl lg:text-[56px] text-center pt-6 mb-2 font-openSans"
+        className=" text-3xl md:text-4xl lg:text-[56px] text-center pt-6 mb-2 font-openSans"
       >
         Why choose Nuyu?
       </h1>

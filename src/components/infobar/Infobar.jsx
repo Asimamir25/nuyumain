@@ -37,7 +37,7 @@ const Infobar = () => {
   }, []);
 
   return (
-    <div className="flex border flex-col lg:flex-row items-center sticky z-10  top-0 left-0 right-0 justify-between px-6 md:px-[30px] py-[20px] bg-PRIMARY">
+    <div className="flex border flex-col lg:flex-row items-center sticky z-10  top-0 left-0 right-0 justify-between px-6 md:px-[30px] py-[17px] bg-PRIMARY">
       {/* Location Section */}
       <div className="flex items-center justify-center gap-[12px]  md:mb-0">
         <img src={Map} alt="Map Icon" className="w-6 h-6" />
