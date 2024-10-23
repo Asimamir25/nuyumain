@@ -57,7 +57,7 @@ function Gallery() {
   }, []);
 
   return (
-    <div className="h-screen px-4 mt-4 w-full relative flex flex-col justify-evenly lg:justify-center overflow-hidden">
+    <div className="h-auto  mt-3 w-full relative flex flex-col  overflow-hidden">
       {/* First Row of Images */}
       <div className="relative w-full overflow-hidden">
         <div className="flex flex-row gap-3 animate-scroll-right-to-left">
@@ -76,7 +76,7 @@ function Gallery() {
       <div className="col-span-1 sm:col-span-3 text-center">
         <h2
           ref={subtitleRef}
-          className="text-[32px] sm:text-[40px] my-3 lg:text-[40px] font-openSans text-center"
+          className="text-[32px] sm:text-[40px] my-1 lg:text-[40px] font-openSans text-center"
         >
           NuSmiles delivered by NuYu Dental
         </h2>
