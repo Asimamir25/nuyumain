@@ -17,7 +17,7 @@ export default {
       },
 
       fontFamily: {
-        openSans: ['OpenSans'], // Add Open Sans here
+        openSans: ['Raleway'], // Add Open Sans here
       },
     },
   },

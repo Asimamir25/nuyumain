@@ -47,12 +47,12 @@ function WhyChoose() {
 
   return (
     <div
-      className="w-full h-full lg:h-screen bg-cover bg-center pt-[20px] pb-[20px]  font-sans"
+      className="w-full h-screen bg-cover bg-center  flex flex-col justify-center items-center pt-[10px] pb-[10px]  font-openSans"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <h1
       
-        className=" text-3xl md:text-4xl lg:text-[56px] text-center pt-6 mb-2 font-openSans"
+        className=" text-3xl md:text-4xl lg:text-[46px] text-center pt-6 mb-2 font-openSans"
       >
         Why choose Nuyu?
       </h1>
@@ -65,13 +65,13 @@ function WhyChoose() {
               <div className="flex justify-center">
                 <img
                   src={Location}
-                  className="w-[75px] sm:w-[100px] mb-3"
+                  className="w-[75px] sm:w-[90px] "
                   alt="Location"
                 />
               </div>
               <h2
               
-                className="title-font  text-lg sm:text-xl lg:text-2xl text-gray-900 text-center max-w-[350px] mx-auto font-openSans"
+                className="title-font  text-lg sm:text-xl lg:text-2xl text-gray-900 text-center max-w-[300px] mx-auto font-openSans"
               >
                 Luxury dental practice in an excellent location
               </h2>
@@ -83,7 +83,7 @@ function WhyChoose() {
               <div className="flex justify-center">
                 <img
                   src={Batch}
-                  className="w-[75px] sm:w-[100px] mb-3"
+                  className="w-[75px] sm:w-[90px] "
                   alt="Batch"
                 />
               </div>
@@ -105,7 +105,7 @@ function WhyChoose() {
               <div className="flex justify-center">
                 <img
                   src={Calendar}
-                  className="w-[75px] sm:w-[100px] mb-3"
+                  className="w-[75px] sm:w-[90px] mb-3"
                   alt="Calendar"
                 />
               </div>
@@ -123,7 +123,7 @@ function WhyChoose() {
               <div className="flex justify-center">
                 <img
                   src={Doctor}
-                  className="w-[75px] sm:w-[100px] mb-3"
+                  className="w-[75px] sm:w-[90px] "
                   alt="Doctor"
                 />
               </div>
@@ -141,7 +141,7 @@ function WhyChoose() {
               <div className="flex justify-center">
                 <img
                   src={Finance}
-                  className="w-[75px] sm:w-[100px] mb-3"
+                  className="w-[75px] sm:w-[90px] "
                   alt="Finance"
                 />
               </div>

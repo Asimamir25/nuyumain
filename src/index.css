@@ -5,8 +5,8 @@
 
 /* src/styles.css or your main CSS file */
 @font-face {
-  font-family: 'OpenSans';
-  src: url('./assets/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-family: 'Raleway';
+  src: url('./assets/fonts/Raleway-Regular.ttf') format('truetype');
   font-weight: 400; /* Change as needed */
   font-style: normal; /* Change as needed */
 }
