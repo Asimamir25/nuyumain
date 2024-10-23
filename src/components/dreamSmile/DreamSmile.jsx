@@ -66,25 +66,25 @@ function DreamSmile() {
   }, []);
 
   return (
-    <div className="p-6">
+    <div className="p-8">
       {/* Responsive grid container for the cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-[45px]">
         {/* Text Card */}
-        <div className="col-span-1 lg:col-span-1 ">
+        <div className="col-span-1 lg:col-span-1  ">
           <h1
             ref={titleRef}
-            className="font-openSans text-[50px] md:text-[56px] text-BLACK font-semibold leading-snug"
+            className="font-openSans text-[30px] md:text-[36px] text-BLACK font-semibold leading-snug"
           >
             Sculpting your dream smile
           </h1>
           <p
             ref={subtitleRef}
-            className="text-2xl font-openSans italic text-ITAICTEXT leading-10 font-bold mb-2"
+            className="text-2xl font-openSans italic text-ITAICTEXT leading-9  font-bold my-2"
           >
             A wide range of treatments to help Invisalign you achieve your dream
             smile
           </p>
-          <p ref={descriptionRef} className="text-[26px] leading-9 font-openSans">
+          <p ref={descriptionRef} className="text-[20px] leading-7  font-openSans">
             Everyone’s smile is as unique as they are so our team works with
             each individual to understand the dream smile we can achieve for
             them.
@@ -93,7 +93,7 @@ function DreamSmile() {
 
         {/* Image Cards */}
         <div
-          className="bg-cover bg-center relative h-[463px] group"
+          className="bg-cover bg-center relative h-[360px] group"
           style={{ backgroundImage: `url(${Pic1})` }}
         >
           <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
@@ -105,7 +105,7 @@ function DreamSmile() {
         </div>
 
         <div
-          className="bg-cover bg-center relative h-[463px] group"
+          className="bg-cover bg-center relative h-[360px] group"
           style={{ backgroundImage: `url(${Pic2})` }}
         >
           <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
@@ -116,7 +116,7 @@ function DreamSmile() {
           </div>
         </div>
         <div
-          className="bg-cover bg-center relative h-[463px] group"
+          className="bg-cover bg-center relative h-[360px] group"
           style={{ backgroundImage: `url(${Pic3})` }}
         >
           <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
@@ -127,7 +127,7 @@ function DreamSmile() {
           </div>
         </div>
         <div
-          className="bg-cover bg-center relative h-[463px] group"
+          className="bg-cover bg-center relative h-[360px] group"
           style={{ backgroundImage: `url(${Pic4})` }}
         >
          <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">
@@ -138,7 +138,7 @@ function DreamSmile() {
           </div>
         </div>
         <div
-          className="bg-cover bg-center relative h-[463px] group"
+          className="bg-cover bg-center relative h-[360px] group"
           style={{ backgroundImage: `url(${Pic5})` }}
         >
           <div className="absolute bottom-0 left-0 pl-6 pt-6 bg-[#9E7F61] pr-[50px] text-white font-sans pb-6 rounded-tr-lg max-w-[90%] w-[90%] transition-all duration-300 ease-in-out">

@@ -63,11 +63,11 @@ function ReviewSection() {
   }, []);
   return (
     <div
-      className="w-full lg:h-[606px] bg-cover bg-center py-1 font-sans flex flex-col lg:flex-row justify-between items-center md:px-[12.5%] px-4"
+      className="w-full h-[100%] py-10 bg-cover bg-center  justify-evenly font-sans flex flex-col md:flex-row items-center  px-6"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Text Section */}
-      <div className="w-full lg:w-1/2 max-w-full lg:max-w-[50%] text-center lg:text-left">
+      <div className="w-full max-w-full lg:max-w-[50%]  lg:text-left">
         <h1
           ref={subtitleRef}
           className="font-openSans text-[32px] md:text-[50px] lg:text-[56px] text-BLACK mt-6"
@@ -77,11 +77,11 @@ function ReviewSection() {
         <img
           src={Quotes}
           alt="Quotes"
-          className="mt-4 lg:mt-6 mx-auto lg:mx-0"
+          className="mt-4 lg:mt-6  lg:mx-0"
         />
         <p
           ref={subtitleRef}
-          className="font-openSans text-[16px] md:text-[18px] text-GRAY font-normal mt-4 lg:mt-5 px-4 lg:px-0"
+          className="font-openSans text-[16px] md:text-[18px] text-GRAY font-normal mt-4 lg:mt-5 lg:px-0"
         >
           Purus turpis vivamus sem est blandit. In at egestas id sollicitudin
           mattis integer aliquet ut tempor. Risus enim nisi ipsum imperdiet. Sed
@@ -89,22 +89,22 @@ function ReviewSection() {
         </p>
         <p
           ref={titleRef}
-          className="font-openSans text-[24px] md:text-[32px] text-BLACK font-semibold mt-6 lg:mt-10"
+          className="font-openSans text-[24px] md:text-[32px]  text-BLACK font-semibold mt-6 lg:mt-10"
         >
           Jose Turner
         </p>
       </div>
 
       {/* Image Section */}
-      <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-6 lg:mt-0">
-        <div className="w-[300px] h-[400px] md:w-[465px] md:h-[552px]">
+      <div className="w-full lg:w-[27%] flex   mt-6 lg:mt-0">
+        
           <img
             src={Testimonial}
             alt="Testimonial"
-            className="w-full h-full object-cover"
+            className="w-auto h-[440px] object-cover"
           />
         </div>
-      </div>
+      
     </div>
   );
 }

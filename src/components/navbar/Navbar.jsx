@@ -3,6 +3,7 @@ import Logo from "../../assets/nuyu.svg";
 import Arrow from "../../assets/arrow.svg";
 import { FaBars, FaTimes } from "react-icons/fa"; // Icons for hamburger and close
 import { gsap } from "gsap";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to toggle mobile menu
@@ -34,14 +35,15 @@ const Navbar = () => {
   return (
     <nav
       ref={navbarRef}
-      className="bg-[#cac1c1] flex justify-between fixed z-10 left-0 right-0 items-center px-4 sm:px-6 lg:px-4 py-4 sm:py-6 lg:py-8 opacity-90 transition-opacity duration-300"
+      className="bg-[#cac1c1] flex justify-between fixed z-10 left-0 right-0 items-center px-4 sm:px-6 lg:px-4 py-3 sm:py-6 lg:py-8 opacity-90 transition-opacity duration-300"
     >
       {/* Left Section: Logo */}
       <div className="flex items-center">
-        <img src={Logo} alt="logo" className="h-8 sm:h-10 lg:h-14" style={{
+       <Link to='/'>
+       <img src={Logo} alt="logo" className="h-8 sm:h-10 lg:h-14" style={{
     imageRendering: "auto", 
         filter: "contrast(130%)", // Slightly increase contrast for sharper appearance
-  }} />
+  }} /></Link>
       </div>
 
       {/* Hamburger Menu for Small Screens */}

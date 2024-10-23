@@ -49,15 +49,15 @@ const PictureLayout = () => {
       if (el) {
         gsap.fromTo(
           el,
-          { opacity: 0, y: -50 }, // Initial state
+          { opacity: 0, y: -50 },
           {
             opacity: 1,
             y: 0,
             duration: 1,
             scrollTrigger: {
               trigger: el,
-              start: "top 80%", // Trigger when the top of the element hits 80% of the viewport
-              toggleActions: "play none none reverse", // Play on enter, none on leave
+              start: "top 80%",
+              toggleActions: "play none none reverse",
             },
           }
         );
@@ -68,15 +68,15 @@ const PictureLayout = () => {
       if (el) {
         gsap.fromTo(
           el,
-          { opacity: 0, y: 50 }, // Initial state
+          { opacity: 0, y: 50 },
           {
             opacity: 1,
             y: 0,
             duration: 1,
             scrollTrigger: {
               trigger: el,
-              start: "top 80%", // Trigger when the top of the element hits 80% of the viewport
-              toggleActions: "play none none reverse", // Play on enter, none on leave
+              start: "top 80%",
+              toggleActions: "play none none reverse",
             },
           }
         );
@@ -85,7 +85,7 @@ const PictureLayout = () => {
   }, []);
 
   return (
-    <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 h-full w-full overflow-hidden">
+    <div className="grid grid-cols-1 md:grid-cols-[20%_1fr_20%] h-full w-full overflow-hidden">
       {/* Left Column (Images) */}
       <div className="relative flex items-center justify-center">
         <div className="flex flex-col gap-2 absolute animate-scroll">
@@ -94,31 +94,31 @@ const PictureLayout = () => {
               key={index}
               src={image}
               alt={`Image ${index + 1}`}
-              className="w-full h-auto hidden md:block"
+              className="w-full h-auto hidden md:block" // Adjust image size here
             />
           ))}
         </div>
       </div>
 
       {/* Center Content (Text) */}
-      <div className="w-full flex flex-col text-center items-center mb-4 md:mb-0">
-        <div className="mt-3">
+      <div className="w-full flex flex-col text-center items-center mb-4 md:mb-0"> {/* Take more space */}
+        <div className="mt-20">
           <h2
-            ref={(el) => (titleRefs.current[0] = el)}
-            className=" text-3xl sm:text-4xl lg:text-[50px] xl:text-6xl font-bold font-openSans"
+       
+            className="text-3xl sm:text-2xl lg:text-[50px] xl:text-6xl font-bold font-openSans"
           >
             Your smile,
           </h2>
           <h2
-            ref={(el) => (titleRefs.current[1] = el)}
-            className="text-3xl sm:text-4xl lg:text-[50px] xl:text-6xl font-bold font-openSans"
+            // ref={(el) => (titleRefs.current[1] = el)}
+            className="text-3xl sm:text-2xl lg:text-[50px] xl:text-6xl font-bold font-openSans"
           >
             Our passion
           </h2>
         </div>
         <p
           ref={(el) => (paragraphRefs.current[0] = el)}
-          className="mt-2 text-24 text-[#9E7F618A] px-4 font-bold italic font-openSans"
+          className="mt-2 text-3xl text-[#9E7F618A] px-4 font-bold italic font-openSans"
         >
           Quality dental care in the heart of Cheltenham
         </p>
@@ -154,14 +154,14 @@ const PictureLayout = () => {
       </div>
 
       {/* Right Column (Images) */}
-      <div className="relative flex items-center justify-center">
+      <div className="relative flex items-center justify-end">
         <div className="flex flex-col gap-2 absolute animate-scroll-reverse">
           {imagesRightColumn.map((image, index) => (
             <img
               key={index}
               src={image}
               alt={`Image ${index + 1}`}
-              className="w-full h-auto hidden md:block"
+              className="w- h-full auto hidden md:block" // Adjust image size here
             />
           ))}
         </div>
