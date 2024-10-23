@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import './main.css';
 
 const images = [
   'https://img.freepik.com/free-photo/dental-cabinet-with-various-medical-equipment_140725-7678.jpg?t=st=1729621230~exp=1729624830~hmac=40ed29f4ef5f27fbdd0e4644a6d7206bebeb1e21dff05bc6585e6671c6b68407&w=826',
@@ -9,30 +10,26 @@ const images = [
 ];
 
 const Main = () => {
-  const [currentImage, setCurrentImage] = useState(images[0]);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [fade, setFade] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(true);
+      setFade(true); // Start fading out
+
       setTimeout(() => {
-        setCurrentImage(prevImage => {
-          const currentIndex = images.indexOf(prevImage);
-          const nextIndex = (currentIndex + 1) % images.length;
-          return images[nextIndex];
-        });
-        setFade(false);
-      }, 500); // Match this with the CSS transition duration
+        setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
+        setFade(false); // Start fading in
+      }, 590); // Match this with the CSS transition duration
     }, 5000); // Change image every 5 seconds
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div
-      className={`w-full h-screen flex items-center justify-center relative bg-cover bg-no-repeat bg-center transition-opacity duration-500 ${fade ? 'opacity-83' : 'opacity-100'}`}
-      style={{ backgroundImage: `url(${currentImage})` }}
-    >
+    <div className="w-full h-screen flex items-center justify-center relative bg-black">
+      <div className={`image-container ${fade ? 'fade-out' : 'fade-in'}`} style={{ backgroundImage: `url(${images[currentImageIndex]})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+
       <div className="absolute inset-0 bg-black opacity-80"></div>
 
       <div className="text-center relative z-10">
