@@ -76,7 +76,7 @@ function Gallery() {
       <div className="col-span-1 sm:col-span-3 text-center">
         <h2
           ref={subtitleRef}
-          className="text-[32px] sm:text-[40px] my-1 lg:text-[40px] font-openSans text-center"
+          className="text-[32px] sm:text-[40px] my-[11px] lg:text-[40px] font-openSans font-bold text-center"
         >
           NuSmiles delivered by NuYu Dental
         </h2>

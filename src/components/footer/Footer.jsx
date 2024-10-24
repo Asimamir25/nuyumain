@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import Logo from "../../assets/nuyu.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { gsap } from "gsap";
@@ -39,16 +38,18 @@ const Footer = () => {
 
   return (
     <div className="bg-[#9E7F61] h-auto">
-      <div className="flex flex-col lg:flex-row gap-3">
-        <div className="w-full lg:w-[37%] h-auto pt-[40px] flex justify-center flex-col md:pt-[30px] pl-[20px] md:pl-4">
-        <img 
-          src="https://nuyu-swart.vercel.app/assets/img/Logo-white.png" 
-          className="mb-4 w-60 h-auto filter invert brightness-0" 
-          alt="Logo" 
-        />
+      <div className="flex flex-col lg:flex-row justify-center ">
+        {/* Left Column (50%) */}
+        <div className="w-full lg:w-[45%] h-auto pt-[40px] flex justify-center flex-col md:pt-[30px] pl-[30px] md:px-4">
+          <img 
+            src="https://nuyu-swart.vercel.app/assets/img/Logo-white.png" 
+            className="mb-4 w-60 h-auto filter invert brightness-0" 
+            alt="Logo" 
+            ref={logoRef} // Reference the logo for animation
+          />
           <p
             ref={textRef}
-            className=" text-[14px] md:text-[22px] 2xl:text-[20px] font-normal font-openSans text-[#CDD8D9]"
+            className="text-[14px] md:text-[22px] 2xl:text-[20px] font-normal font-openSans text-[#CDD8D9]"
           >
             Amet quis rhoncus turpis phasellus ut dui. Volutpat turpis tortor blandit eget nibh ac lacus vitae purus. Sagittis tortor fermentum.
           </p>
@@ -67,7 +68,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="py-[36px] w-full lg:w-[60%]">
+        {/* Right Column (50%) */}
+        <div className="py-[10px]  pr-4 w-full lg:w-[55%] ">
           {/* Responsive iframe wrapper */}
           <div className="relative w-full h-0 pb-[56.25%]"> {/* 16:9 aspect ratio */}
             <iframe

@@ -13,7 +13,8 @@ export default {
         GRAY:"#808586"
       },
       screens: {
-        'xs': '450px', // Custom breakpoint for 300px screen
+        'xs': '760px', // Custom breakpoint for 300px screen
+        
       },
 
       fontFamily: {
